@@ -22,7 +22,7 @@
 require_once './definitions.php';
 define("HOME_PAGE","index.php");
 define("ARCHIVE_PAGE","archive.php");
-
+define("FUN_ARCHIVE","funstuff_archives.php");
 
 function getNav($actPage)
 {
@@ -38,12 +38,12 @@ function getNav($actPage)
 					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Me</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Resume</a>
-						<a class="dropdown-item" href="#">Fun Stuff</a>
+						<a class="dropdown-item" href="'.DOMAIN_NAME.FUN_ARCHIVE.'">Fun Stuff</a>
 						<a class="dropdown-item" href="#">Contact</a>
 					</div>
 				</li>
           <li class="nav-item">
-            <a class="nav-link" href="'.DOMAIN_NAME.ARCHIVE_PAGE.'">Archive</a>
+            <a class="nav-link" href="'.DOMAIN_NAME.ARCHIVE_PAGE.'">Archives</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/farrp2011" target="_blank">GitHub</a>
@@ -75,7 +75,7 @@ function getfoot()
 			<ul class="list-inline">
 				<li class="list-inline-item"><a class="specLink rightBorder btn btn-dark" href="privacy.php">Privacy</a></li>
 				<li class="list-inline-item"><a class="specLink rightBorder btn btn-dark" href="contact.php">Contact</a></li>
-				<li class="list-inline-item"><a class="specLink btn btn-dark" href="cohort.php">Cohort Pages</a></li>
+				<li class="list-inline-item"><a class="specLink btn btn-dark" href="https://www.linkedin.com/in/paul-farr-16a247153/" target="_blank">LinkedIn</a></li>
 			</ul>
 		</div>
 	</footer>');
