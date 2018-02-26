@@ -21,6 +21,7 @@
  */
 require_once './definitions.php';
 define("HOME_PAGE","index.php");
+define("ARCHIVE_PAGE","archive.php");
 
 
 function getNav($actPage)
@@ -42,7 +43,7 @@ function getNav($actPage)
 					</div>
 				</li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Archive</a>
+            <a class="nav-link" href="'.DOMAIN_NAME.ARCHIVE_PAGE.'">Archive</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/farrp2011" target="_blank">GitHub</a>
@@ -61,5 +62,21 @@ function getNav($actPage)
 			<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search </button>
 		</form>
       </div>
-    </nav><br/>';
+    </nav><br/><br/>';
+}
+
+function getfoot()
+{
+	echo('<!--footer time -->
+		<footer class="bg-faded text-center py-5 bg-secondary text-white">
+		<div class="container">
+			<p class="m-0 ">&copy;Paul Farr 2018. All Rights Reserved.</p>
+			<hr />
+			<ul class="list-inline">
+				<li class="list-inline-item"><a class="specLink rightBorder btn btn-dark" href="privacy.php">Privacy</a></li>
+				<li class="list-inline-item"><a class="specLink rightBorder btn btn-dark" href="contact.php">Contact</a></li>
+				<li class="list-inline-item"><a class="specLink btn btn-dark" href="cohort.php">Cohort Pages</a></li>
+			</ul>
+		</div>
+	</footer>');
 }

@@ -22,7 +22,7 @@ Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
 */
 
 header {
-  padding: 250px 0 100px;
+  padding: 190px 0 100px;
   margin: auto;
 }
 div.title_box{
@@ -31,4 +31,8 @@ div.title_box{
 
 .bg-primary {
     background-color: inherit !important;
+}
+.center{
+    float: none;
+    margin: 0 auto;
 }
