@@ -21,9 +21,12 @@
  */
 require_once './definitions.php';
 define("HOME_PAGE","index.php");
+define("ARCHIVE_PAGE","archive.php");
+define("FUN_ARCHIVE","funstuff_archives.php");
+define("CONTACT_PAGE","contact.php");
+define("RESUME_PAGE","resume.php");
 
-
-function getNav($actPage)
+function getNav($actPage = null)
 {
 	echo '<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="'.DOMAIN_NAME.HOME_PAGE.'">'.SITE_NAME.'</a>
@@ -36,30 +39,40 @@ function getNav($actPage)
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Me</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
-						<a class="dropdown-item" href="#">Resume</a>
-						<a class="dropdown-item" href="#">Fun Stuff</a>
-						<a class="dropdown-item" href="#">Contact</a>
+						<a class="dropdown-item" href="'.DOMAIN_NAME.RESUME_PAGE.'">Resume</a>
+						<a class="dropdown-item" href="'.DOMAIN_NAME.FUN_ARCHIVE.'">Fun Stuff</a>
+						<a class="dropdown-item" href="'.DOMAIN_NAME.CONTACT_PAGE.'">Contact</a>
 					</div>
 				</li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Archive</a>
+            <a class="nav-link" href="'.DOMAIN_NAME.ARCHIVE_PAGE.'">Archives</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/farrp2011" target="_blank">GitHub</a>
           </li>
-				<!--<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown01">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</li>-->
+				
         </ul>
 		<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
 			<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search </button>
 		</form>
       </div>
-    </nav><br/>';
+    </nav><br/><br/>';
+}
+
+function getfoot()
+{
+	echo('<!--footer time -->
+		<footer class="bg-faded text-center py-5 bg-secondary text-white">
+		<div class="container">
+			<p class="m-0 ">&copy;Paul Farr 2018. All Rights Reserved.</p>
+			<hr />
+			<ul class="list-inline">
+				<li class="list-inline-item"><a class="specLink rightBorder btn btn-dark" href="privacy.php">Privacy</a></li>
+				<li class="list-inline-item"><a class="specLink rightBorder btn btn-dark" href="contact.php">Contact</a></li>
+				<li class="list-inline-item"><a class="specLink btn btn-dark" href="https://www.linkedin.com/in/paul-farr-16a247153/" target="_blank">LinkedIn</a></li>
+				<li class="list-inline-item"><a class="specLink rightBorder btn btn-dark" href="login.php">administration</a></li>
+			</ul>
+		</div>
+	</footer>');
 }

@@ -1,4 +1,5 @@
-/*
+<!DOCTYPE html>
+<!--
 Copyright (C) 2018 Paul Farr
 
 This program is free software; you can redistribute it and/or
@@ -16,23 +17,19 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
-
-    Created on : Feb 25, 2018, 9:02:14 PM
-    Author     : Paul Farr
-*/
-
-header {
-  padding: 190px 0 100px;
-  margin: auto;
-}
-div.title_box{
-    background-color: rgba(0,0,0,0.4);  
-}
-
-.bg-primary {
-    background-color: inherit !important;
-}
-.center{
-    float: none;
-    margin: 0 auto;
-}
+-->
+<?php 
+require_once './definitions.php'; 
+require_once './html_fags.php';;
+?>
+<html>
+    <head>
+		  <?php echo HEAD_STUFF ?>
+        <meta charset="UTF-8">
+        <title>Logout</title>
+    </head>
+    <body>
+		  <?php getNav(null) ?>
+		  <?php getfoot(); ?>
+    </body>
+</html>

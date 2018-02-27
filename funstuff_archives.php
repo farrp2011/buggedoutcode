@@ -25,48 +25,41 @@ require_once './html_fags.php';;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Bugged Out Code</title>
+		<title>Fun Stuff</title>
 		<?php echo HEAD_STUFF ?>
 	</head>
 	<body>
-		 <?php getNav(HOME_PAGE)?>
-		<div class="bg-primary text-white">
-        <header class="bg-primary text-white" style="background-image: url('img/header.jpg'); max-width: 100%; margin: auto;">
-            <div class="container text-center">
-                <div class="title_box" style=" text-shadow: 2px 2px rgba(0,0,0,.4);">
-                  <h1>Paul Farr</h1>
-                  <p class="lead"><strong>Lets explore some code together.</strong></p>
-						<p class="lead">I'm a student going to Olympic College sharing a Blog about Web-Development, Programming and the Raspberry Pi.</p>
-                </div>
-            </div>
-        </header>
-		</div>
-		<br/>
+		 <?php getNav(HOME_PAGE)?> 
+		 <br/>
 		<div class="container">
+			<ul class="pagination justify-content-center align-items-center">
+				<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Next</a></li>
+			</ul>
 			<div class="row">
 				<div class="col-sm-7">
 					<div class="card">
 						<div class="card-body">
-							<h4 class="card-title">Raspberry Pi Garden</h4>
+							<h4 class="card-title">I went Hiking</h4>
 							<p>9 November 2014</p>
 							<img class="card-img-top" src="img/small.jpg" alt="Card image">
-							<p class="card-text">I used a raspberry Pi to water my Garden</p>
-							
+							<p class="card-text">I hiked to somewhere. It was a lot of fun.</p>
 							<a href="#" class="btn btn-primary">Blog Stuff</a>
-							<a href="https://github.com/farrp2011" class="btn btn-secondary">GitHub</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-5">
 					<div class="card">
 						<div class="card-body">
-							<h4 class="card-title">Tic-Tac-Toe</h4>
+							<h4 class="card-title">I went Camping</h4>
 							<p>9 November 2014</p>
 							<img class="card-img-top" src="img/small.jpg" alt="Card image">
-							<p class="card-text">I made a Tic-Tac-Toe game in High School</p>
-							
+							<p class="card-text">I camped at lake angles.  It was really beautful.</p>
 							<a href="#" class="btn btn-primary">Blog Stuff</a>
-							<a href="https://github.com/farrp2011" class="btn btn-secondary">GitHub</a>
+							
 						</div>
 					</div>
 				</div>
@@ -76,31 +69,36 @@ require_once './html_fags.php';;
 				<div class="col-sm-5">
 					<div class="card">
 						<div class="card-body">
-							<h4 class="card-title">Raspberry Pi Garden</h4>
+							<h4 class="card-title">I went Canoeing</h4>
 							<p>9 November 2014</p>
 							<img class="card-img-top" src="img/small.jpg" alt="Card image">
-							<p class="card-text">I used a raspberry Pi to water my Garden</p>
-							
+							<p class="card-text">I canoed out to Blake Island.</p>
 							<a href="#" class="btn btn-primary">Blog Stuff</a>
-							<a href="https://github.com/farrp2011" class="btn btn-secondary">GitHub</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-7">
 					<div class="card">
 						<div class="card-body">
-							<h4 class="card-title">Tic-Tac-Toe</h4>
+							<h4 class="card-title">I saw the Eclipse</h4>
 							<p>9 November 2014</p>
 							<img class="card-img-top" src="img/small.jpg" alt="Card image">
-							<p class="card-text">I made a Tic-Tac-Toe game in High School</p>
-							
+							<p class="card-text">I was amazing.</p>
 							<a href="#" class="btn btn-primary">Blog Stuff</a>
-							<a href="https://github.com/farrp2011" class="btn btn-secondary">GitHub</a>
 						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
+			<br/>
+			<ul class="pagination justify-content-center align-items-center">
+				<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Next</a></li>
+			</ul>
 		</div>
+		
 		<?php getfoot()?>
 	</body>
 </html>
