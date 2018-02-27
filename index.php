@@ -48,6 +48,7 @@ require_once './html_fags.php';;
 					<div class="card">
 						<div class="card-body">
 							<h4 class="card-title">Raspberry Pi Garden</h4>
+							<p>9 November 2014</p>
 							<img class="card-img-top" src="img/small.jpg" alt="Card image">
 							<p class="card-text">I used a raspberry Pi to water my Garden</p>
 							
@@ -60,6 +61,7 @@ require_once './html_fags.php';;
 					<div class="card">
 						<div class="card-body">
 							<h4 class="card-title">Tic-Tac-Toe</h4>
+							<p>9 November 2014</p>
 							<img class="card-img-top" src="img/small.jpg" alt="Card image">
 							<p class="card-text">I made a Tic-Tac-Toe game in High School</p>
 							
@@ -75,6 +77,7 @@ require_once './html_fags.php';;
 					<div class="card">
 						<div class="card-body">
 							<h4 class="card-title">Raspberry Pi Garden</h4>
+							<p>9 November 2014</p>
 							<img class="card-img-top" src="img/small.jpg" alt="Card image">
 							<p class="card-text">I used a raspberry Pi to water my Garden</p>
 							
@@ -87,6 +90,7 @@ require_once './html_fags.php';;
 					<div class="card">
 						<div class="card-body">
 							<h4 class="card-title">Tic-Tac-Toe</h4>
+							<p>9 November 2014</p>
 							<img class="card-img-top" src="img/small.jpg" alt="Card image">
 							<p class="card-text">I made a Tic-Tac-Toe game in High School</p>
 							
