@@ -19,7 +19,7 @@
  * 
  * Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
  */
-require_once './definitions.php';
+require_once 'definitions.php';
 define("HOME_PAGE","index.php");
 define("ARCHIVE_PAGE","archive.php");
 define("FUN_ARCHIVE","funstuff_archives.php");
