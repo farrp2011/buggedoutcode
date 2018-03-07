@@ -30,6 +30,8 @@ require_once './controller/html_fags.php';;
     </head>
     <body>
 		  <?php getNav(null) ?>
+		  <br/>
+		  <p>Welcome will verify the user then send them on to somewhere else <a href="menu.php">Like Here</a></p>
 		  <?php getfoot(); ?>
     </body>
 </html>

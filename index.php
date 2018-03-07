@@ -45,7 +45,7 @@ require_once './controller/html_fags.php';;
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-7">
-					<div class="card">
+					<div class="card m-1">
 						<div class="card-body">
 							<h4 class="card-title">Raspberry Pi Garden</h4>
 							<p>9 November 2014</p>
@@ -58,7 +58,7 @@ require_once './controller/html_fags.php';;
 					</div>
 				</div>
 				<div class="col-sm-5">
-					<div class="card">
+					<div class="card m-1">
 						<div class="card-body">
 							<h4 class="card-title">Tic-Tac-Toe</h4>
 							<p>9 November 2014</p>
@@ -74,7 +74,7 @@ require_once './controller/html_fags.php';;
 		
 			<div class="row">
 				<div class="col-sm-5">
-					<div class="card">
+					<div class="card m-1">
 						<div class="card-body">
 							<h4 class="card-title">Raspberry Pi Garden</h4>
 							<p>9 November 2014</p>
@@ -87,7 +87,7 @@ require_once './controller/html_fags.php';;
 					</div>
 				</div>
 				<div class="col-sm-7">
-					<div class="card">
+					<div class="card m-1">
 						<div class="card-body">
 							<h4 class="card-title">Tic-Tac-Toe</h4>
 							<p>9 November 2014</p>

@@ -65,7 +65,7 @@ function getfoot()
 	echo('<!--footer time -->
 		<footer class="bg-faded text-center py-5 bg-secondary text-white">
 		<div class="container">
-			<p class="m-0 ">&copy;Paul Farr 2018. All Rights Reserved.</p>
+			<p class="m-0">&copy;Paul Farr 2018. All Rights Reserved.</p>
 			<hr />
 			<ul class="list-inline">
 				<li class="list-inline-item"><a class="specLink rightBorder btn btn-dark" href="privacy.php">Privacy</a></li>
