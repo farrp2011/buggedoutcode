@@ -20,7 +20,7 @@
  * Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
  */
 
-define("DOMAIN_NAME","http://localhost/BuggedOutCode.com/");
+define("DOMAIN_NAME","https://BuggedOutCode.com/");
 define('HEAD_STUFF','<meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="'.DOMAIN_NAME.'css/bootstrap.min.css">
 	<link rel="stylesheet" href="'.DOMAIN_NAME.'css/custom.css">
