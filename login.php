@@ -18,9 +18,14 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
 -->
-<?php 
-require_once 'controller/definitions.php'; 
-require_once 'controller/html_fags.php';
+<?php
+	require_once './controller/definitions.php';
+	require_once './controller/html_fags.php';
+	require_once './controller/Users.php';
+
+	$user = new Users();
+	$user->isLoggedIn($_COOKIE[COL_COOKIE]);
+
 ?>
 <html>
    <head>
@@ -29,7 +34,7 @@ require_once 'controller/html_fags.php';
 		<title>Login</title>
 	</head>
 	<body>
-		<?php getNav(null) ?>
+		<?php getNav(null, $user) ?>
 		<br/>
 		<div class="container">
 			 <form method="post" action=<?php echo('"'.DOMAIN_NAME.'welcome.php"');?> >

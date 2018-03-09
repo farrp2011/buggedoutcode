@@ -106,7 +106,7 @@ class Users
 
 		if(!isset($_cookie))//if the cookie is not set we are cool too
 		{
-			$this->isLogged = false;
+			$this->isLogged = false;//this will save time later on
 			return(false);
 		}
 		//Only if $this->isLogged is null do we have to check do sql stuff below

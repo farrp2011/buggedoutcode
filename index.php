@@ -24,7 +24,7 @@ Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
 	require_once './controller/Users.php';
 
 	$user = new Users();
-	$user->isLoggedin($_COOKIE[COL_COOKIE]);
+	$user->isLoggedIn($_COOKIE[COL_COOKIE]);
 
 ?>
 <html lang="en">
