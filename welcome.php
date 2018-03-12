@@ -4,7 +4,7 @@
 	require_once './controller/Users.php';
 
 	$user = new Users();
-	$user->isLeggerIn($_COOKIE[COL_COOKIE]);
+	$user->isLoggedIn($_COOKIE[COL_COOKIE]);
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
     </head>
     <body>
 		  <?php getNav(null, $user) ?>
-		  <br/>
+		  <br/><br/>
 		  <p>Welcome will verify the user then send them on to somewhere else <a href="menu.php">Like Here</a></p>
 		  <?php getfoot(); ?>
     </body>

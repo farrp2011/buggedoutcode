@@ -20,7 +20,7 @@
  * Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
  */
 
-define("DOMAIN_NAME","https://BuggedOutCode.com/");
+define("DOMAIN_NAME","http://192.168.56.101/");
 define('HEAD_STUFF','<meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="'.DOMAIN_NAME.'css/bootstrap.min.css">
 	<link rel="stylesheet" href="'.DOMAIN_NAME.'css/custom.css">
@@ -30,7 +30,7 @@ define('HEAD_STUFF','<meta name="viewport" content="width=device-width, initial-
 define('SITE_NAME','BuggedOutCode');
 define('COPYRIGHT','<!--MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2018 Paul Farr
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
