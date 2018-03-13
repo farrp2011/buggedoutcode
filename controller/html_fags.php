@@ -53,7 +53,7 @@ function getNav($actPage = null, $user)
 			</li>';
 			if(isset($_COOKIE[COL_COOKIE]) && $user->isLoggedin($_COOKIE[COL_COOKIE]))
 			{
-				echo '<li><a class="nav-link" href="'.DOMAIN_NAME.'menu.php">menu</a></li><li><a class="nav-link" href="'.DOMAIN_NAME.'logout.php">logout</a></li>';
+				echo '<li><a class="nav-link" href="'.DOMAIN_NAME.'menu.php">Menu</a></li><li><a class="nav-link" href="'.DOMAIN_NAME.'logout.php">Logout</a></li>';
 			}
 		echo '</ul>
 		<form class="form-inline my-2 my-lg-0">

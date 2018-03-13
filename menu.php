@@ -4,7 +4,10 @@
 	require_once './controller/Users.php';
 
 	$user = new Users();
-	if(!$user = $user->isLoggedIn($_COOKIE[COL_COOKIE]))
+
+	//echo("var dump is happening now");
+	//var_dump($user->isLoggedIn($_COOKIE[COL_COOKIE]));
+	if(!($user->isLoggedIn($_COOKIE[COL_COOKIE])))
 	{
 		include 'err404.php';
 		exit();

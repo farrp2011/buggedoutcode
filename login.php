@@ -7,7 +7,11 @@
 	$err = null;
 	if(isset($_POST[COL_EMAIL]) != FALSE || isset($_POST[COL_PASSWORD]) != FALSE )
 	{//if email and password is set lets try to login
-		$err = $user->login($_POST[COL_EMAIL], $_POST[COL_PASSWORD]);
+		if($err = $user->login($_POST[COL_EMAIL], $_POST[COL_PASSWORD]))
+		{
+			header("Location: menu.php");
+			exit();
+		}
 	}
 
 	if($user->isLoggedIn($_COOKIE[COL_COOKIE]))
@@ -39,15 +43,18 @@
 				<div class="col-4 mx-auto" style="padding: 10px;">
 					<div class="form-group">
 						<label for="email">Email address:</label>
-						<input type="email" class="form-control" id="email" name=""><!-- make sure to change the name -->
+						<input type="email" class="form-control" id="email" name=<?php echo('"'.COL_EMAIL.'"');?>>
 					</div>
 					<div class="form-group">
 					  <label for="pwd">Password:</label>
-					  <input type="password" class="form-control" id="pwd" name=""><!-- make sure to change the name -->
+					  <input type="password" class="form-control" id="pwd" name=<?php echo('"'.COL_PASSWORD.'"');?>>
 					</div>
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</div>
 			</form>
+			<div class="col-4 mx-auto text-center">
+				<a href=<?php echo('"'.DOMAIN_NAME.'signup.php"')?>>Register</a>
+			</div>
 		</div>
 		<?php getfoot(); ?>
 	</body>

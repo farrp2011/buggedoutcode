@@ -3,9 +3,9 @@
 	require_once './controller/html_fags.php';
 	require_once './controller/Users.php';
 
-	//$user = new Users();
-	//$user->isLoggedIn($_COOKIE[COL_COOKIE]);
+	$user = new Users();
 	setcookie(COL_COOKIE, "-1", time()-1);
+	//We don't need to ask if the user is logged on this page
 
 ?>
 <!DOCTYPE html>
