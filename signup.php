@@ -60,7 +60,7 @@
 
 			<form method="post" action=<?php echo('"'.DOMAIN_NAME.'signup.php"');?> >
 
-					<div class="col-6 mx-auto" style="padding: 10px;">
+					<div class="col-sm-10 col-md-8 col-lg-6 mx-auto" style="padding: 10px;">
 						<div class="form-group">
 							<label for="First Name">First Name:</label>
 							<input type="text" class="form-control" id="" name=<?php echo('"'.COL_FNAME.'"');?>>

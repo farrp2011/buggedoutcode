@@ -14,13 +14,13 @@
 <!DOCTYPE html>
 <?php echo COPYRIGHT;?>
 <html>
-    <head>
-		  <?php echo HEAD_STUFF ?>
-        <meta charset="UTF-8">
-        <title>Add Blog</title>
-    </head>
-    <body>
-		  <?php getNav(null, $user) ?>
-		  <?php getfoot(); ?>
-    </body>
+	<head>
+	<?php echo HEAD_STUFF ?>
+		<meta charset="UTF-8">
+		<title>Add Blog</title>
+	</head>
+	<body>
+		<?php getNav(null, $user) ?>
+		<?php getfoot(); ?>
+	</body>
 </html>

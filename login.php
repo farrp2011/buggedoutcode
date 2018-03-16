@@ -40,7 +40,7 @@
 						echo ('<div class="col-4 mx-auto" style="padding: 10px;">Wrong Email or Password</div>');
 					}
 				?>
-				<div class="col-4 mx-auto" style="padding: 10px;">
+				<div class="col-sm-10 col-md-8 col-lg-6 mx-auto" style="padding: 10px;">
 					<div class="form-group">
 						<label for="email">Email address:</label>
 						<input type="email" class="form-control" id="email" name=<?php echo('"'.COL_EMAIL.'"');?>>

@@ -17,7 +17,7 @@
 		<?php getNav(null, $user);?>
 		<div class="container">
 			<div class="row">
-				<div class="col-4 mx-auto text-center">
+				<div class="col-sm-11 col-md-10 col-lg-8 col-lx-6 mx-auto text-center">
 					<h1>Oppss... 404</h1>
 					<p>If you found a broken link please send me an email at farrp2011@live.com</p>
 				</div>
