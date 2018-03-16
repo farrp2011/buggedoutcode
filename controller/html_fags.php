@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * Copyright (C) 2018 Paul Farr
  *
  * This program is free software; you can redistribute it and/or
@@ -16,9 +16,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- * 
+ *
  * Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
  */
+require_once 'Users.php';
 require_once 'definitions.php';
 define("HOME_PAGE","index.php");
 define("ARCHIVE_PAGE","archive.php");
@@ -26,7 +27,7 @@ define("FUN_ARCHIVE","funstuff_archives.php");
 define("CONTACT_PAGE","contact.php");
 define("RESUME_PAGE","resume.php");
 
-function getNav($actPage = null)
+function getNav($actPage = null, $user)
 {
 	echo '<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="'.DOMAIN_NAME.HOME_PAGE.'">'.SITE_NAME.'</a>
@@ -44,14 +45,17 @@ function getNav($actPage = null)
 						<a class="dropdown-item" href="'.DOMAIN_NAME.CONTACT_PAGE.'">Contact</a>
 					</div>
 				</li>
-          <li class="nav-item">
+			<li class="nav-item">
             <a class="nav-link" href="'.DOMAIN_NAME.ARCHIVE_PAGE.'">Archives</a>
-          </li>
-          <li class="nav-item">
+			</li>
+			<li class="nav-item">
             <a class="nav-link" href="https://github.com/farrp2011" target="_blank">GitHub</a>
-          </li>
-				
-        </ul>
+			</li>';
+			if(isset($_COOKIE[COL_COOKIE]) && $user->isLoggedin($_COOKIE[COL_COOKIE]))
+			{
+				echo '<li><a class="nav-link" href="'.DOMAIN_NAME.'menu.php">Menu</a></li><li><a class="nav-link" href="'.DOMAIN_NAME.'logout.php">Logout</a></li>';
+			}
+		echo '</ul>
 		<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
 			<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search </button>

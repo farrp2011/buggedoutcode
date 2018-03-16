@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<!--
-Copyright (C) 2018 Paul Farr
+<?php
+	require_once './controller/definitions.php';
+	require_once './controller/html_fags.php';
+	require_once './controller/Users.php';
+	$user = new Users();
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+	$err = null;
+	if(isset($_POST[COL_EMAIL]) != FALSE || isset($_POST[COL_PASSWORD]) != FALSE )
+	{//if email and password is set lets try to login
+		if($err = $user->login($_POST[COL_EMAIL], $_POST[COL_PASSWORD]))
+		{
+			header("Location: menu.php");
+			exit();
+		}
+	}
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+	if($user->isLoggedIn($_COOKIE[COL_COOKIE]))
+	{
+		header("Location: menu.php");
+	}
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-
-Paul Farr would really like a well paying job as well. Email: farrp2011@live.com
--->
-<?php 
-require_once 'controller/definitions.php'; 
-require_once 'controller/html_fags.php';
 ?>
+<!DOCTYPE html>
+<?php echo COPYRIGHT;?>
 <html>
    <head>
 		<?php echo HEAD_STUFF ?>
@@ -29,23 +29,32 @@ require_once 'controller/html_fags.php';
 		<title>Login</title>
 	</head>
 	<body>
-		<?php getNav(null) ?>
+		<?php getNav(null, $user) ?>
 		<br/>
 		<div class="container">
-			 <form method="post" action=<?php echo('"'.DOMAIN_NAME.'welcome.php"');?> >
+			<form method="post" action=<?php echo('"'.DOMAIN_NAME.'login.php"');?> >
 			<div class="text-center"><h2>Registration is Closed</h2></div>
-				<div class="col-4 mx-auto" style="padding: 10px;">
+				<?php
+					if($err != null)
+					{
+						echo ('<div class="col-4 mx-auto" style="padding: 10px;">Wrong Email or Password</div>');
+					}
+				?>
+				<div class="col-sm-10 col-md-8 col-lg-6 mx-auto" style="padding: 10px;">
 					<div class="form-group">
 						<label for="email">Email address:</label>
-						<input type="email" class="form-control" id="email" name=""><!-- make sure to change the name -->
+						<input type="email" class="form-control" id="email" name=<?php echo('"'.COL_EMAIL.'"');?>>
 					</div>
 					<div class="form-group">
 					  <label for="pwd">Password:</label>
-					  <input type="password" class="form-control" id="pwd" name=""><!-- make sure to change the name -->
+					  <input type="password" class="form-control" id="pwd" name=<?php echo('"'.COL_PASSWORD.'"');?>>
 					</div>
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</div>
 			</form>
+			<div class="col-4 mx-auto text-center">
+				<a href=<?php echo('"'.DOMAIN_NAME.'signup.php"')?>>Register</a>
+			</div>
 		</div>
 		<?php getfoot(); ?>
 	</body>
