@@ -1,7 +1,8 @@
 <?php
 
-
 define("DOMAIN_NAME","http://192.168.1.48/");
+define("DIR_IMG","/var/www/html/img/");
+
 define('HEAD_STUFF','<meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="'.DOMAIN_NAME.'css/bootstrap.min.css">
 	<link rel="stylesheet" href="'.DOMAIN_NAME.'css/custom.css">

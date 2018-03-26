@@ -21,7 +21,7 @@
     <head>
 		  <?php echo HEAD_STUFF ?>
         <meta charset="UTF-8">
-        <title>Privacy</title>
+        <title>Blog -Name-</title>
     </head>
     <body>
 		  <?php getNav(null, $user); ?>
